@@ -8,7 +8,7 @@ export default ({ data }) => (
     <Img
       className={styles.heroImage}
       alt={data.name}
-      fluid={data.heroImage.fluid}
+      fluid={data.heroImage.localFile.childImageSharp.fluid}
     />
     <div className={styles.heroDetails}>
       <h3 className={styles.heroHeadline}>{data.name}</h3>
